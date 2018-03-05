@@ -59,6 +59,50 @@ $route['book/create']['post']   	   = 'book/create';
 $route['book/update/(:num)']['put']    = 'book/update/$1';
 $route['book/delete/(:num)']['delete'] = 'book/delete/$1';
 
+// Campus Controller Route
+$route['campus']['get']          	       = 'campus';
+$route['campus/detail/(:num)']['get']    = 'campus/detail/$1';
+$route['campus/create']['post']   	   = 'campus/create';
+$route['campus/update/(:num)']['put']    = 'campus/update/$1';
+$route['campus/delete/(:num)']['delete'] = 'campus/delete/$1';
+
+// Category Controller Route
+$route['category']['get']          	       = 'category';
+$route['category/detail/(:num)']['get']    = 'category/detail/$1';
+$route['category/create']['post']   	   = 'category/create';
+$route['category/update/(:num)']['put']    = 'category/update/$1';
+$route['category/delete/(:num)']['delete'] = 'category/delete/$1';
+
+// Coorporate Controller Route
+$route['coorporate']['get']          	       = 'coorporate';
+$route['coorporate/detail/(:num)']['get']    = 'coorporate/detail/$1';
+$route['coorporate/create']['post']   	   = 'coorporate/create';
+$route['coorporate/update/(:num)']['put']    = 'coorporate/update/$1';
+$route['coorporate/delete/(:num)']['delete'] = 'coorporate/delete/$1';
+
+// DiscountOffers Controller Route
+$route['discountoffers']['get']          	       = 'discountoffers';
+$route['discountoffers/detail/(:num)']['get']    = 'discountoffers/detail/$1';
+$route['discountoffers/create']['post']   	   = 'discountoffers/create';
+$route['discountoffers/update/(:num)']['put']    = 'discountoffers/update/$1';
+$route['discountoffers/delete/(:num)']['delete'] = 'discountoffers/delete/$1';
+
+//ImgOffers
+$route['imgoffers']['get']          	       = 'imgoffers';
+$route['imgoffers/detail/(:num)']['get']    = 'imgoffers/detail/$1';
+$route['imgoffers/create']['post']   	   = 'imgoffers/create';
+$route['imgoffers/update/(:num)']['put']    = 'imgoffers/update/$1';
+$route['imgoffers/delete/(:num)']['delete'] = 'imgoffers/delete/$1';
+
+
+//Users
+$route['users']['get']          	       = 'users';
+$route['users/detail/(:num)']['get']    = 'users/detail/$1';
+$route['users/create']['post']   	   = 'users/create';
+$route['users/update/(:num)']['put']    = 'users/update/$1';
+$route['users/delete/(:num)']['delete'] = 'users/delete/$1';
+
+
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
