@@ -268,4 +268,38 @@ class MyModel extends CI_Model {
         return array('status' => 200,'message' => 'Data has been deleted.');
     }
 
+
+
+
+    // Users Model Query
+    public function users_offers_all_data()
+    {
+        //Needs to change this query
+        return $this->db->select('id,title,author')->from('users')->order_by('id','desc')->get()->result();
+    }
+
+    public function users_offers_detail_data($id)
+    {
+        //Needs to change to return the data of respective store
+        return $this->db->select('id,title,author')->from('users')->where('id',$id)->order_by('id','desc')->get()->row();
+    }
+
+    public function users_offers_create_data($data)
+    {
+        $this->db->insert('users',$data);
+        return array('status' => 201,'message' => 'Data has been created.');
+    }
+
+    public function users_offers_update_data($id,$data)
+    {
+        $this->db->where('id',$id)->update('users',$data);
+        return array('status' => 200,'message' => 'Data has been updated.');
+    }
+
+    public function users_offers_delete_data($id)
+    {
+        $this->db->where('id',$id)->delete('users');
+        return array('status' => 200,'message' => 'Data has been deleted.');
+    }
+
 }
